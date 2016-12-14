@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head>
+      <title> Neighbour Hood Map </title>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link rel="stylesheet" href="css/style.css">
+      <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Dancing+Script">
+  </head>
+  <body>
+    <div class="container">
+        <div class="heading">
+            <h1> Chandigarh </h1>
+            <h2> The Green city </h2>
+        </div>
+        <div class="search">
+          <input placeholder="search for places...."  data-bind="value: searchText, valueUpdate: 'afterkeydown' ,event: {keyup: search}"/>
+        <ul class="name" data-bind="foreach: array">
+          <li data-bind="text:name,visible:show,click: $parent.setSelected"  style="font-size:20px"></li></ul>
+        </div>
+        <div id="map"></div>
+        <div class="error">
+          <h4 data-bind="text:errormessage"></h4>
+    </div>
+  </div>
+    <script src="js/knockout.js"></script>
+    <script src="js/jquery-3.1.1.min.js"></script>
+    <script src="js/resources.js"></script>
+    <script async
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDV-Wm6rxHNAstmL0sfiM2EpBXrLYHr6Fc&callback=initMap" onerror="googleError()">
+    </script>
+
+  </body>
+
+</html>

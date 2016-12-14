@@ -1,0 +1,34 @@
+body {
+  font-family: 'Dancing Script', cursive;
+
+  margin: 10px;
+  margin-top: 5px;
+  padding-top: 5px;
+  padding: 10px;
+}
+.heading {
+  background-color: #76FF03;
+  color: black;
+  text-align: center;
+}
+
+#map {
+  height: 400px;
+  width: 100%;
+}
+@media (min-width:1000px) {
+h1 { font-size: 10.0rem; }
+ h2 { font-size: 8.0rem; }
+ h3 {font-size : 6.0rem;}
+}
+
+@media (min-width:500px){
+ h1{font-size: 5.0rem;}
+ h2{font-size: 4.0rem;}
+ h3{font-size: 3.0rem;}
+}
+@media (min-width:250px){
+  h1{font-size: 3.0rem;}
+  h2{font-size: 1.0rem;}
+  h3{font-size: 0.5rem;}
+}
